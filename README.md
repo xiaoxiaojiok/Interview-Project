@@ -15,7 +15,7 @@
 
 这个仓库目前还在不断完善之中，有些问题还没加入到笔记，有些问题的思路和答案可以做得更好！如果你有很棒的想法，欢迎提 issues 或者 pull requests！
 
-## 0. 算法和数据结构
+## 0. [算法和数据结构](algorithm/README.md)
 ## 1. [计算机网络](Computer%20Network.md)
 
 <div>
