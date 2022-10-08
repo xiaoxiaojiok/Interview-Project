@@ -9,8 +9,6 @@
 
 当你浏览每个版块的目录时，你可能会觉得并没有涉及到多少问题，但其实，**每个问题下的一连串追问**才是这些笔记的精华所在。如果你觉得你已经对目录中的问题了然于胸，你可以点进这些问题，多看看它们的 follow-up questions.
 
-这个repo没有包含数据结构与算法部分，你可以查看我的另一个repo：[Solid data structure and algorithms](https://github.com/wolverinn/Iridescent)，在这个repo中我系统地练习了各种数据结构和算法，并提供了Python代码
-
 ### Contribute
 
 这个仓库目前还在不断完善之中，有些问题还没加入到笔记，有些问题的思路和答案可以做得更好！如果你有很棒的想法，欢迎提 issues 或者 pull requests！

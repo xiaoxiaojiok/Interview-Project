@@ -88,6 +88,28 @@ REST指Representational State Transfer，可以翻译为“表现层状态转化
 - 服务器回应：在响应中放上其它API的链接，方便用户寻找
 
 ## Linux 常用命令
+### 进程相关
+``` ps -ef```
+``` ps -aux --sort -%mem | head -n 5```
+``` ps -L 2011 或top -H -p xxx 查看进程的线程```
+``` top -d 3 -p xxx |m 切换显示内存 t 显示进程和CPU信息 c 切换完整命令行 M 根据内存排序 P CPU排序```
+``` load average: 1.15, 1.42, 1.44 -1分钟、5分钟、15分钟的负载情况，每隔5秒钟检查, 高于5表示高负载```
+### 网络相关
+``` lsof -i :56900```
+``` netstat -nlp |-t tcp -u udp -l listen  -p 进程信息 -n使用ip -a 所有信息 -ie查看网络接口```
+``` netstat -anp | grep 127.0.0.1:11211```
+``` tcpdump -iany -Xlnps0  port 8125 > tcp-long.txt```
+``` ngrep "audio" -q  -Wbyline -d any port 8125```
+### 文件相关
+``` grep -A 匹配后的多少行 -B 匹配前的多少行  -C```
+``` less +100g xx 定位第100行，只加载部分比more快，并可前后翻页，退出后bash不会残留```
+``` zcat xxx```
+``` find . -name "log.*" -mtime +2 -delete 删除两天无变化文件```
+``` du -h --max-depth=1 -BM /home ```
+### 字符串处理相关
+``` cat tcp-long.txt | grep -v '|' | awk '{print $NF}'|sort -n| uniq > awk.txt```
+``` sed -i "s#IP#BEW#g" *.js ```
+
 
 ### 参考
 - [Learn Git Branching - 可视化的学习 Git 操作](https://learngitbranching.js.org/?demo=&locale=zh_CN)

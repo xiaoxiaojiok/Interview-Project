@@ -65,3 +65,6 @@ Solid data structure and algorithms in Python
 （建议在本地查看```.ipynb```文件，方便运行和页内跳转）
 
 主要是为了方便算法的练习，一些测试代码用的数据结构已经在文件里构造好了。并且只练习最高频最经典的一些算法，方便快速找到手感。
+
+#### [可视化](https://visualgo.net/en)
+#### [LeetCode](https://leetcode.com/)
