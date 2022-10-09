@@ -38,16 +38,16 @@
 <a href="Python%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
 </div>
 
-## 5. [Java](Python%20Handbook.md)
+## 5. [Java](Java%20Handbook.md)
 
 <div>
-<a href="Python%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
+<a href="Java%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
 </div>
 
-## 6. [Go](Python%20Handbook.md)
+## 6. [Go](Go%20Handbook.md)
 
 <div>
-<a href="Python%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
+<a href="Go%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
 </div>
 
 
