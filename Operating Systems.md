@@ -26,6 +26,12 @@
 
 ------
 
+### socket操作
+- 服务端：bind、listen、accept、read、send，close
+- 客户端：connect、read、send、close
+### 大小端
+- 小端：数据低位保存内存低位，数据高位保存内存高位
+- 网络传输用的大端
 ### 进程和线程有什么区别？
 - 进程（Process）是系统进行资源分配和调度的基本单位，线程（Thread）是CPU调度和分派的基本单位；
 - 线程依赖于进程而存在，一个进程至少有一个线程；
@@ -586,6 +592,7 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 - [线程同步与并发 - - SegmentFault](https://segmentfault.com/a/1190000018970361)
 - [彻底搞懂epoll高效运行的原理](http://baijiahao.baidu.com/s?id=1641172494287388070&wfr=spider&for=pc)
 - [用户态与内核态的切换](https://www.cnblogs.com/lirong21/p/4213028.html)
+- [计算机系统漫游](http://coderxiao.com/2015/04/28/Tour-of-Computer-Systems-1/)
 
 ### 待完成
 - [ ] IPC

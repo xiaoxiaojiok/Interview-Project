@@ -28,8 +28,27 @@
 - 单线程操作字符串缓冲区 下操作大量数据 = StringBuilder
 - 多线程操作字符串缓冲区 下操作大量数据 = StringBuffer
 
+### Java多态
+- 编译时多态：重载函数
+- 运行时多态：继承并重写同时父类引用指向子类
+### 映射
+- 运行时才加载知道名称的类，获取完整构造和对象实体，设置属性和调用方法
+### final和static
+- final用于类、方法、常量，不能变
+- static用于方法和变量，可以变
+### 抽象类和接口
+- 抽象类有些方法可以默认实现，接口不可以
+- 抽象类只能继承一个，接口可以同时实现多个
+
+### syncchronized
+- 依靠CAS 无锁队列，基本思路时自旋后阻塞，竞争切换后继续竞争
 ### ThreadLocal
-### Sync
+### Gc Root
+- 虚拟机栈（栈帧中的本地变量表）中引用的对象
+- 本地方法栈中 JNI（即一般说的 Native 方法）引用的对象
+- 方法区中类静态属性引用的对象
+- 方法区中常量引用的对象
+
 ### JVM调优
 - ```jmap -dump:format=b,file=202208.dump 7132```
 - ```java -verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCApplicationStoppedTime -Xloggc:groupdv2-jvm.log -XX:PermSize -XX:MaxPermSize -Xmx50m -Xms20m -Done-jar.main.class=com.netease.cc.groupd.Groupd -jar groupdv2-1.0.34-all.jar```
