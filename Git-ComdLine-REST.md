@@ -87,6 +87,17 @@ REST指Representational State Transfer，可以翻译为“表现层状态转化
 - 状态码：服务器应该返回尽可能精确的状态码，客户端只需查看状态码，就可以判断出发生了什么情况。见计算机网络部分 -- [HTTP请求有哪些常见状态码？](Computer%20Network.md#HTTP请求有哪些常见状态码)
 - 服务器回应：在响应中放上其它API的链接，方便用户寻找
 
+
+## 容器
+### Docker
+- namespace/cgroups/unionfs实现隔离和资源独立
+### k8s
+- 控制平面：kube-apiserver/kube-schedule/kube-control-manager 通过etcd服务发现
+- 计算节点: kubelet、kube-proxy（网络通信）、运行时引擎（docker)
+- 其他：持久存储、镜像仓库、底层基础架构
+### 云原生
+- devops+持续交付+微服务+容器
+
 ## Linux 常用命令
 ### 进程相关
 ``` ps -ef```
@@ -94,6 +105,7 @@ REST指Representational State Transfer，可以翻译为“表现层状态转化
 ``` ps -L 2011 或top -H -p xxx 查看进程的线程```
 ``` top -d 3 -p xxx |m 切换显示内存 t 显示进程和CPU信息 c 切换完整命令行 M 根据内存排序 P CPU排序```
 ``` load average: 1.15, 1.42, 1.44 -1分钟、5分钟、15分钟的负载情况，每隔5秒钟检查, 高于5表示高负载```
+``` kill -9和kill区别(默认用15，带信号和进程号给内核，进程收到处理，系统和守护进程一般不生效)```
 ### 网络相关
 ``` lsof -i :56900```
 ``` netstat -nlp |-t tcp -u udp -l listen  -p 进程信息 -n使用ip -a 所有信息 -ie查看网络接口```

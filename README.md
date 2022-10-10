@@ -40,15 +40,15 @@
 
 ## 5. [Java](Java%20Handbook.md)
 
-<div>
-<a href="Java%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
-</div>
+* [类加载过程](Java%20Handbook.md)
+* [Java内存结构](Java%20Handbook.md)
+* [Java垃圾回收器及回收算法](Java%20Handbook.md)
+* [hashmap和hashtable区别](Java%20Handbook.md)
+* [JVM调优](#JVM调优)
+
+* [参考](#参考)
 
 ## 6. [Go](Go%20Handbook.md)
-
-<div>
-<a href="Go%20Handbook.md" target="_blank"><img src="_v_images/20191229144622659_9248.png" width="370px"></img></a>
-</div>
 
 
 ## 7. [设计模式](Design%20Pattern.md)
