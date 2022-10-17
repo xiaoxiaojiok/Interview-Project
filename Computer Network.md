@@ -30,6 +30,26 @@
 
 ### http1.0和1.1区别
 - 1.1支持长连接，Connection：Keep-Alive或Close
+### http3.0、2.0和1.0区别
+- 3.0时QUIC协议，快速UDP网络连接
+- 2.0二进制协议、支持真正io复用、头部压缩、服务端推送数据到客户端缓存
+### TCP7个定时器
+- 三次握手连接超时定时器
+- 超时重发定时器（数据没有ack重发）
+- 延迟应答定时器（数据和ack一起发）
+- 保活定时器
+- fin_wait2定时器
+- time_wait定时器，2MSL
+- 坚持定时器，活动窗口为0时定时探测更新窗口，避免一直不能发数据
+
+### tcp11个状态
+- closed、listen、send、recevid、建立状态
+- fin_wait1：主动方发送fin后
+- fin_wait2：主动方接收到ack后
+- time_wait：主动方接收到fin并发送ack后
+- close_wait：被动方发送ack但还没有发送自己的fin期间
+- last_ack：被动方发送fin并等待最后一个ack
+- closing: 四次挥手都收到fin后的状态
 
 ### 浏览器输入url发生过程
 - 浏览器dns-操作系统dns-本地host文件-远程dns服务器

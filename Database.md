@@ -366,7 +366,8 @@ InnoDB的索引使用的是B+树实现，B+树对比B树的好处：
 - 前者支持结构化查询语言，支持复杂的查询功能和表关联。后者只能进行简单的查询
 - 前者支持事务，具有ACID特性。后者则是BASE，最终一致性
 
-
+### Redis事务
+- MULTI、EXEC、DISARD、WATCH这几个命令实现（watch一个key如果事务提交前有其他客户端修改则事务失败）
 ### 参考
 
 - [数据库六大范式详解 -- CSDN博客](https://blog.csdn.net/weixin_43433032/article/details/89293663)
